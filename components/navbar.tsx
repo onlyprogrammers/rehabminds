@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import mainlogo from "@/components/images/logos/mainlogo.png"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -39,8 +40,7 @@ export default function Navbar() {
     >
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/logo.png" alt="Rehab Minds Logo" width={50} height={50} className="h-12 w-auto" />
-          <span className={`text-xl font-bold ${isScrolled ? "text-primary" : "text-white"}`}>Rehab Minds</span>
+          <Image src={mainlogo} alt="Rehab Minds Logo" width={50} height={50} className="h-12 w-auto" />
         </Link>
 
         <nav className="hidden md:flex gap-8">
