@@ -55,7 +55,7 @@ export default function FAQPage() {
                   </Link>
                 </li>
               </ul>
-              
+
               <div className="pt-8">
                 <h3 className="text-lg font-semibold mb-4">Need More Help?</h3>
                 <p className="text-sm text-muted-foreground mb-4">
@@ -67,7 +67,7 @@ export default function FAQPage() {
               </div>
             </div>
           </div>
-          
+
           <div className="md:col-span-3 space-y-10">
             {/* Appointments */}
             <div id="appointments" className="scroll-mt-20">
@@ -90,7 +90,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-2">
                   <AccordionTrigger>What should I bring to my first appointment?</AccordionTrigger>
                   <AccordionContent>
@@ -107,7 +107,7 @@ export default function FAQPage() {
                     </ul>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-3">
                   <AccordionTrigger>How long will my appointment last?</AccordionTrigger>
                   <AccordionContent>
@@ -126,7 +126,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-4">
                   <AccordionTrigger>What is your cancellation policy?</AccordionTrigger>
                   <AccordionContent>
@@ -141,7 +141,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-5">
                   <AccordionTrigger>Do you offer virtual appointments?</AccordionTrigger>
                   <AccordionContent>
@@ -164,7 +164,7 @@ export default function FAQPage() {
                 </AccordionItem>
               </Accordion>
             </div>
-            
+
             {/* Services */}
             <div id="services" className="scroll-mt-20">
               <h2 className="text-2xl font-bold mb-6 border-b pb-2">Services</h2>
@@ -189,7 +189,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-2">
                   <AccordionTrigger>How do I know which service is right for me?</AccordionTrigger>
                   <AccordionContent>
@@ -207,7 +207,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-3">
                   <AccordionTrigger>How long does therapy typically last?</AccordionTrigger>
                   <AccordionContent>
@@ -225,7 +225,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-4">
                   <AccordionTrigger>Do you offer services for children and adolescents?</AccordionTrigger>
                   <AccordionContent>
@@ -245,7 +245,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-5">
                   <AccordionTrigger>What therapeutic approaches do your specialists use?</AccordionTrigger>
                   <AccordionContent>
@@ -268,7 +268,7 @@ export default function FAQPage() {
                 </AccordionItem>
               </Accordion>
             </div>
-            
+
             {/* Insurance & Payments */}
             <div id="insurance" className="scroll-mt-20">
               <h2 className="text-2xl font-bold mb-6 border-b pb-2">Insurance & Payments</h2>
@@ -302,7 +302,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-2">
                   <AccordionTrigger>What are your fees for services?</AccordionTrigger>
                   <AccordionContent>
@@ -321,7 +321,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-3">
                   <AccordionTrigger>Do you offer payment plans?</AccordionTrigger>
                   <AccordionContent>
@@ -333,7 +333,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-4">
                   <AccordionTrigger>What payment methods do you accept?</AccordionTrigger>
                   <AccordionContent>
@@ -354,7 +354,7 @@ export default function FAQPage() {
                 </AccordionItem>
               </Accordion>
             </div>
-            
+
             {/* Confidentiality & Privacy */}
             <div id="confidentiality" className="scroll-mt-20">
               <h2 className="text-2xl font-bold mb-6 border-b pb-2">Confidentiality & Privacy</h2>
@@ -381,7 +381,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-2">
                   <AccordionTrigger>How do you protect my personal information?</AccordionTrigger>
                   <AccordionContent>
@@ -401,7 +401,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-3">
                   <AccordionTrigger>Can my family members access my records?</AccordionTrigger>
                   <AccordionContent>
@@ -420,7 +420,7 @@ export default function FAQPage() {
                 </AccordionItem>
               </Accordion>
             </div>
-            
+
             {/* Our Specialists */}
             <div id="specialists" className="scroll-mt-20">
               <h2 className="text-2xl font-bold mb-6 border-b pb-2">Our Specialists</h2>
@@ -443,7 +443,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-2">
                   <AccordionTrigger>How do I choose the right specialist for my needs?</AccordionTrigger>
                   <AccordionContent>
@@ -464,7 +464,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-3">
                   <AccordionTrigger>Can I request a specific specialist?</AccordionTrigger>
                   <AccordionContent>
@@ -478,7 +478,7 @@ export default function FAQPage() {
                 </AccordionItem>
               </Accordion>
             </div>
-            
+
             {/* General Questions */}
             <div id="general" className="scroll-mt-20">
               <h2 className="text-2xl font-bold mb-6 border-b pb-2">General Questions</h2>
@@ -491,7 +491,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-2">
                   <AccordionTrigger>How do I provide feedback about my experience?</AccordionTrigger>
                   <AccordionContent>
@@ -509,7 +509,7 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-3">
                   <AccordionTrigger>Do you offer resources for crisis situations?</AccordionTrigger>
                   <AccordionContent>
@@ -526,52 +526,52 @@ export default function FAQPage() {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-4">
                   <AccordionTrigger>How can I get involved in mental health advocacy?</AccordionTrigger>
                   <AccordionContent>
                     <p className="text-muted-foreground">
                       There are many ways to get involved in mental health advocacy:
                     </p>
-                    <ul className="list-disc list-inside text-muted-foreground mt-2 
-                    </p>
-                    <ul className=\"list-disc list-inside text-muted-foreground mt-2 space-y-1">
-                      <li>Volunteer with local mental health organizations</li>
-                    </ul>   <li>Participate in awareness events and fundraisers</li>
-                      <li>Share your personal experiences (if comfortable) to help reduce stigma</li>
-                      <li>Support mental health legislation and policy initiatives</li>
-                      <li>Donate to mental health research and service organizations</li>
-                    </ul>
-                    <p className="text-muted-foreground mt-2">
-                      We occasionally host community events and workshops focused on mental health awareness and education. Check our website or subscribe to our newsletter for information about upcoming opportunities.
-                    </p>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            </div>
+                    <ul className="list-disc list-inside text-muted-foreground mt-2"> 
+                    
+                    <li>Volunteer with local mental health organizations</li>
+                     <li>Participate in awareness events and fundraisers</li>
+                  <li>Share your personal experiences (if comfortable) to help reduce stigma</li>
+                  <li>Support mental health legislation and policy initiatives</li>
+                  <li>Donate to mental health research and service organizations</li>
+                </ul>
+                <p className="text-muted-foreground mt-2">
+                    We occasionally host community events and workshops focused on mental health awareness and education. Check our website or subscribe to our newsletter for information about upcoming opportunities.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
-      </section>
-  ;<section className="py-16 bg-primary text-primary-foreground">
-    <div className="container text-center">
-      <h2 className="text-3xl font-bold mb-6">Still Have Questions?</h2>
-      <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-        We're here to help. Contact our team directly for personalized assistance with any questions or concerns.
-      </p>
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Link href="/contact">
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-            Contact Us
-          </Button>
-        </Link>
-        <Link href="/appointment">
-          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-            Book an Appointment
-          </Button>
-        </Link>
+    </div >
+      </section >
+    <section className="py-16 bg-primary text-primary-foreground">
+      <div className="container text-center">
+        <h2 className="text-3xl font-bold mb-6">Still Have Questions?</h2>
+        <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+          We're here to help. Contact our team directly for personalized assistance with any questions or concerns.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link href="/contact">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              Contact Us
+            </Button>
+          </Link>
+          <Link href="/appointment">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              Book an Appointment
+            </Button>
+          </Link>
+        </div>
       </div>
-    </div>
-  </section>
-  </div>
+
+    </section>
+  </div >
   )
 }
