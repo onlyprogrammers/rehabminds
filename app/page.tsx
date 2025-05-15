@@ -6,10 +6,15 @@ import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Brain, Heart, Users, Sparkles } from "lucide-react"
 import TestimonialCarousel from "@/components/testimonial-carousel"
 import HeroSlider from "@/components/hero-slider"
+import Head from "next/head";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
+      <Head>
+        <link rel="icon" href="/tablogo.png" />
+        <title>My Next.js App</title>
+      </Head>
       {/* Hero Slider */}
       <HeroSlider />
 
