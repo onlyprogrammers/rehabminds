@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import mentalhelth from "@/components/images/mental health.png"
+import team from "@/components/images/team.jpg"
+import care from "@/components/images/care.jpg"
 
 interface Slide {
   image: any
@@ -26,7 +28,7 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: "/placeholder.svg?height=600&width=600",
+    image: care,
     title: "Compassionate Care for Mental Wellness",
     subtitle:
       "Professional psychiatric services dedicated to helping you achieve mental well-being through personalized care.",
@@ -42,7 +44,7 @@ const slides: Slide[] = [
     },
   },
   {
-    image: mentalhelth,
+    image: team,
     title: "Expert Team of Mental Health Specialists",
     subtitle:
       "Our qualified psychiatrists and psychologists are here to provide the support you need on your journey to wellness.",
@@ -58,7 +60,7 @@ const slides: Slide[] = [
     },
   },
   {
-    image: "/placeholder.svg?height=600&width=600",
+    image: mentalhelth,
     title: "Comprehensive Mental Health Services",
     subtitle:
       "From therapy and counseling to specialized treatments, we offer a wide range of services to address your needs.",
@@ -217,10 +219,10 @@ export default function ModernHero() {
                   className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden border-4 border-white shadow-xl z-10"
                 >
                   <Image
-                    src={slides[currentSlide].image || "/placeholder.svg"}
+                    src={slides[currentSlide].image}
                     alt={slides[currentSlide].title}
                     fill
-                    className="object-cover h-full w-full rounded-full"
+                    className=" h-100"
                     priority
                   />
                 </motion.div>
@@ -246,7 +248,7 @@ export default function ModernHero() {
                       onClick={() => goToSlide(index)}
                     >
                       <Image
-                        src={slide.image || "/placeholder.svg"}
+                        src={slide.image}
                         alt={slide.title}
                         fill
                         className="object-cover opacity-60 hover:opacity-80 transition-opacity w-full h-full"
