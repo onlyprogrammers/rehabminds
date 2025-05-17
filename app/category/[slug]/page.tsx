@@ -6,7 +6,7 @@ import { notFound } from "next/navigation"
 
 export function generateStaticParams() {
   return services.map((service) => ({
-    slug: encodeURIComponent(service.category),
+    slug: service.category,
   }))
 }
 

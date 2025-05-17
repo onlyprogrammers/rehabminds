@@ -22,7 +22,7 @@ export function CategoriesGrid({ services }: CategoriesGridProps) {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {services.map((service, index) => (
         <Link
-          href={`/category/${encodeURIComponent(service.category)}`}
+          href={`/category/${service.category}`}
           key={index}
           className="transition-transform hover:scale-105"
         >
