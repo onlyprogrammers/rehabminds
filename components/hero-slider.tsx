@@ -231,7 +231,7 @@ export default function ModernHero() {
               {/* Circle of images */}
               <div className="absolute inset-0 flex items-center justify-center">
                 {slides.map((slide, index) => {
-                  if (index === currentSlide) return null
+                   
 
                   const position = getCirclePosition(index, slides.length)
 
@@ -251,7 +251,7 @@ export default function ModernHero() {
                         src={slide.image}
                         alt={slide.title}
                         fill
-                        className="object-cover opacity-60 hover:opacity-80 transition-opacity w-full h-full"
+                        className={"object-cover transition-opacity w-full h-full " + (index === currentSlide ? "opacity-100" : "opacity-50")}
                       />
                     </motion.div>
                   )
