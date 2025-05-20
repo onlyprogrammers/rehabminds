@@ -128,7 +128,7 @@ export default function ModernHero() {
   }
 
   return (
-    <section className="py-16 md:py-24 overflow-hidden bg-gradient-to-br from-white to-accent/10">
+    <section className="py-16 md:py-10 overflow-hidden bg-gradient-to-br from-white to-accent/10">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side: Content */}
@@ -238,7 +238,7 @@ export default function ModernHero() {
                   return (
                     <motion.div
                       key={index}
-                      className="absolute w-[100px] h-[100px] rounded-full overflow-hidden border-2 border-white shadow-md cursor-pointer"
+                      className={"absolute w-[100px] h-[100px] rounded-full overflow-hidden border-2 border-white shadow-md cursor-pointer " + (index === currentSlide ? " border-3 border-yellow-500" : "")}
                       style={{
                         left: "calc(50% + " + position.x + "px)",
                         top: "calc(50% + " + position.y + "px)",
@@ -251,7 +251,7 @@ export default function ModernHero() {
                         src={slide.image}
                         alt={slide.title}
                         fill
-                        className={"object-cover transition-opacity w-full h-full " + (index === currentSlide ? "opacity-100" : "opacity-50")}
+                        className={"object-cover transition-opacity w-full h-full p-1 bg-white" + (index === currentSlide ? " opacity-100" : " opacity-50")}
                       />
                     </motion.div>
                   )

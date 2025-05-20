@@ -6,6 +6,18 @@ import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Search, Filter, BookOpen, FileText, Video, Download } from "lucide-react"
 
+
+import mentalwellness from "@/components/images/mindfulness.jpeg"
+import anixity from "@/components/images/anxiety.jpeg"
+import mindfullness from "@/components/images/mental health.png"
+import supporting from "@/components/images/support.jpeg"
+import supporting2 from "@/components/images/supporting.jpeg"
+import mentalhealth from "@/components/images/mentalhealth1.jpeg"
+import digitaldetox from "@/components/images/digitaldetox.png"
+import sleep from "@/components/images/wellsleep.jpeg"
+import nutrition from "@/components/images/neutritionhealth.jpeg"
+import { min } from "date-fns"
+
 export default function ResourcesPage() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -55,7 +67,7 @@ export default function ResourcesPage() {
             <CardHeader>
               <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src={anixity}
                   alt="Understanding Anxiety"
                   fill
                   className="object-cover"
@@ -93,7 +105,7 @@ export default function ResourcesPage() {
             <CardHeader>
               <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src={mindfullness}
                   alt="Mindfulness Meditation"
                   fill
                   className="object-cover"
@@ -131,7 +143,7 @@ export default function ResourcesPage() {
             <CardHeader>
               <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src={supporting2}
                   alt="Supporting Loved Ones"
                   fill
                   className="object-cover"
@@ -321,7 +333,7 @@ export default function ResourcesPage() {
           <Card>
             <CardHeader>
               <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
-                <Image src="/placeholder.svg?height=300&width=500" alt="Sleep Hygiene" fill className="object-cover" />
+                <Image src={sleep} alt="Sleep Hygiene" fill className="object-cover" />
               </div>
               <div className="flex items-center gap-2 mb-2">
                 <Badge variant="secondary" className="text-xs">
@@ -354,7 +366,7 @@ export default function ResourcesPage() {
           <Card>
             <CardHeader>
               <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
-                <Image src="/placeholder.svg?height=300&width=500" alt="Digital Detox" fill className="object-cover" />
+                <Image src={digitaldetox} alt="Digital Detox" fill className="object-cover" />
               </div>
               <div className="flex items-center gap-2 mb-2">
                 <Badge variant="secondary" className="text-xs">
@@ -388,7 +400,7 @@ export default function ResourcesPage() {
             <CardHeader>
               <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src={nutrition}
                   alt="Nutrition and Mental Health"
                   fill
                   className="object-cover"

@@ -2,6 +2,10 @@ import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Twitter, Mail, Phone } from "lucide-react"
 
+{/* Footer component for the website */}
+
+import mainlogo from "@/components/images/logos/mainlogo.png"
+
 export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -10,13 +14,13 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <Image
-                src="/logo.png"
+                src={mainlogo}
                 alt="Rehab Minds Logo"
-                width={50}
+                width={150}
                 height={50}
-                className="h-12 w-auto bg-white rounded-full p-1"
+                className="h-12 w-auto p-1"
               />
-              <span className="text-2xl font-bold">Rehab Minds</span>
+              <span className="text-1xl font-bold">Rehab Minds</span>
             </div>
             <p className="text-base text-primary-foreground/80">Compassionate Care for Mental Wellness</p>
             <div className="flex gap-5">
