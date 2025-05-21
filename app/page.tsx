@@ -148,12 +148,12 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
+            <div className="relative h-[400px] sm-w rounded-lg overflow-hidden shadow-xl">
               <Image
                 src={mentalhealth}
                 alt="Mental wellness support"
                 fill
-                className="object-cover"
+                className="object-cover sm-w"
               />
             </div>
           </div>

@@ -19,8 +19,8 @@ export default function Footer() {
                 width={150}
                 height={50}
                 className="h-12 w-auto p-1"
+                style={{filter: "invert(1) hue-rotate(180deg) brightness(0.8)"}}
               />
-              <span className="text-1xl font-bold">Rehab Minds</span>
             </div>
             <p className="text-base text-primary-foreground/80">Compassionate Care for Mental Wellness</p>
             <div className="flex gap-5">
