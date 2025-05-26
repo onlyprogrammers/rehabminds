@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Brain, Heart, Users, Sparkles, Award, Shield } from "lucide-react"
 import mainimage from "@/components/images/aboutsection.png"
+import about2 from "@/components/images/about2.png"
 
 export default function AboutPage() {
   return (
@@ -23,7 +24,7 @@ export default function AboutPage() {
       {/* Mission & Vision */}
       <section className="py-16 container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[400px] sm:w-300px rounded-lg overflow-hidden">
+          <div className="relative h-[400px]  sm:w-300px rounded-lg overflow-hidden flex self-center">
             <Image src={mainimage} alt="Rehab Minds team" fill className="" />
           </div>
           <div className="space-y-6">
@@ -216,7 +217,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src={about2}
                 alt="Mental wellness session"
                 fill
                 className="object-cover"

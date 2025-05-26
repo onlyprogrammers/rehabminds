@@ -1,6 +1,13 @@
+import tnc from '@/components/images/logos/t&c.png'
+import ca from '@/components/images/logos/childandadolecent.png'
+import dt from '@/components/images/logos/disordertreatment.png'
+import pm from '@/components/images/logos/psychomatrictretment.png'
+import wp from '@/components/images/logos/workshopprogramme.png'
+
 export const services = [
   {
     category: "Therapy & Counseling",
+    image:tnc,
     subcategories: [
       {
         name: "Individual Counseling",
@@ -58,6 +65,7 @@ export const services = [
   },
   {
     category: "Disorder Treatment",
+    image:dt,
     subcategories: [
       {
         name: "Stress, Depression, Anxiety",
@@ -116,6 +124,7 @@ export const services = [
   },
   {
     category: "Child & Adolescent",
+    image:ca,
     subcategories: [
       {
         name: "Child Psychology",
@@ -173,6 +182,7 @@ export const services = [
   },
   {
     category: "Psychometric & Clinical",
+    image:pm,
     subcategories: [
       {
         name: "IQ Testing",
@@ -230,6 +240,7 @@ export const services = [
   },
   {
     category: "Workshops & Programs",
+    image:wp,
     subcategories: [
       {
         name: "Cultural Adjustment Assistance",

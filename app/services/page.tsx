@@ -8,11 +8,11 @@ export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
-        <div className="container">
+      <section className="bg-primary text-primary-foreground py-5 md:py-12">
+        <div className="container py-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
-            <p className="text-xl text-primary-foreground/90 mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">Our Services</h1>
+            <p className="text-xl text-primary-foreground/90 mb-4">
               Comprehensive mental health services tailored to your unique needs.
             </p>
           </div>

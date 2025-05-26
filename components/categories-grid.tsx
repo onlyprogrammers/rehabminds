@@ -1,8 +1,10 @@
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image"
 
 type Service = {
   category: string
+  image: any
   subcategories: {
     name: string
     about: {
@@ -27,11 +29,15 @@ export function CategoriesGrid({ services }: CategoriesGridProps) {
           className="transition-transform hover:scale-105"
         >
           <Card className="h-full border-2 hover:border-secondary bg-gradient-to-b from-white to-blue-50">
-            <CardHeader className="bg-primary text-white rounded-t-lg">
-              <CardTitle>{service.category}</CardTitle>
-              <CardDescription className="text-blue-100">
-                {service.subcategories.length} services available
-              </CardDescription>
+            <CardHeader className="bg-primary text-white rounded-t-lg flex-row items-center">
+              <Image src={service.image?service.image:""} alt="img" height={39} className="mx-2" />
+              <div>
+
+                <CardTitle>{service.category}</CardTitle>
+                <CardDescription className="text-blue-100">
+                  {service.subcategories.length} services available
+                </CardDescription>
+              </div>
             </CardHeader>
             <CardContent className="pt-6">
               <ul className="space-y-2">

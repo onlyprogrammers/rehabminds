@@ -33,7 +33,7 @@ export function CategoryDetails({ category }: CategoryDetailsProps) {
             <div>
               <h3 className="text-lg font-medium mb-2 text-primary">Instructions</h3>
               <ul className="space-y-2">
-                {subcategory.about.instructions.map((instruction, idx) => (
+                {subcategory.about.instructions.map((instruction, idx) => idx<1 &&(
                   <li key={idx} className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-secondary mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">{instruction}</span>
