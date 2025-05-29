@@ -3,8 +3,12 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Brain, Heart, Users, Sparkles, Award, Shield } from "lucide-react"
-import mainimage from "@/components/images/aboutsection.png"
+import mainimage from "@/components/images/mentalwellness.png"
 import about2 from "@/components/images/about2.png"
+import doctor1 from "@/components/images/doctor1.png"
+import doctor2 from "@/components/images/doctor2.png"
+import doctor3 from "@/components/images/doctor3.png"
+
 
 export default function AboutPage() {
   return (
@@ -176,13 +180,13 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="relative h-[200px] rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=200&width=200" alt="Team member 1" fill className="object-cover" />
+              <Image src={doctor1} alt="Team member 1" fill className="object-cover" />
             </div>
             <div className="relative h-[200px] rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=200&width=200" alt="Team member 2" fill className="object-cover" />
+              <Image src={doctor2} alt="Team member 2" fill className="object-cover" />
             </div>
             <div className="relative h-[200px] rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=200&width=200" alt="Team member 3" fill className="object-cover" />
+              <Image src={doctor3} alt="Team member 3" fill className="object-cover" />
             </div>
             <div className="relative h-[200px] rounded-lg overflow-hidden">
               <Image src="/placeholder.svg?height=200&width=200" alt="Team member 4" fill className="object-cover" />

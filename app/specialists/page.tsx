@@ -5,6 +5,9 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Search, Filter } from "lucide-react"
 import { Input } from "@/components/ui/input"
+import doctor1 from "@/components/images/doctor1.png"
+import doctor2 from "@/components/images/doctor2.png"
+import doctor3 from "@/components/images/doctor3.png"
 
 export default function SpecialistsPage() {
   return (
@@ -49,7 +52,7 @@ export default function SpecialistsPage() {
             <CardHeader>
               <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src={doctor2}
                   alt="Dr. Kiran Kumari"
                   fill
                   className="object-cover"
@@ -109,7 +112,7 @@ export default function SpecialistsPage() {
             <CardHeader>
               <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src={doctor3}
                   alt="Dr. Ananya Sharma"
                   fill
                   className="object-cover"
@@ -169,7 +172,7 @@ export default function SpecialistsPage() {
             <CardHeader>
               <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src={doctor1}
                   alt="Dr. Rajiv Mehta"
                   fill
                   className="object-cover"
