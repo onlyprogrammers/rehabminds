@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -9,6 +10,7 @@ import HeroSlider from "@/components/hero-slider"
 import Head from "next/head";
 import { CategoriesGrid } from "@/components/categories-grid"
 import { services } from "@/data/services"
+import React, { useEffect } from "react"
 
 {/* Images */}
 
@@ -22,6 +24,15 @@ import { min } from "date-fns"
 
 
 export default function Home() {
+  const [isMobile, setIsMobile] = React.useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 500); 
+    }
+    handleResize(); // Set initial state
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
@@ -53,8 +64,8 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8 mt-12">
-          <Card className="text-center hover:shadow-lg transition-all hover:border-accent">
+        <div className="grid md:grid-cols-4 gap-4 mt-12" style={{ gridTemplateColumns: isMobile ? 'repeat(2, 1fr)' : 'repeat(4, 1fr)' }}>
+          <Card className="text-center hover:shadow-lg transition-all hover:border-accent" style={{scale: isMobile ? '0.8' : '1'}}>
             <CardHeader className="pb-2">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Brain className="h-8 w-8 text-primary" />
@@ -68,7 +79,7 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          <Card className="text-center hover:shadow-lg transition-all hover:border-accent">
+          <Card className="text-center hover:shadow-lg transition-all hover:border-accent" style={{scale: isMobile ? '0.8' : '1'}}>
             <CardHeader className="pb-2">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Heart className="h-8 w-8 text-primary" />
@@ -80,7 +91,7 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          <Card className="text-center hover:shadow-lg transition-all hover:border-accent">
+          <Card className="text-center hover:shadow-lg transition-all hover:border-accent" style={{scale: isMobile ? '0.8' : '1'}}>
             <CardHeader className="pb-2">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-primary" />
@@ -94,7 +105,7 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          <Card className="text-center hover:shadow-lg transition-all hover:border-accent">
+          <Card className="text-center hover:shadow-lg transition-all hover:border-accent" style={{scale: isMobile ? '0.8' : '1'}}>
             <CardHeader className="pb-2">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Sparkles className="h-8 w-8 text-primary" />

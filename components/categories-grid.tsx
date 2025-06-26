@@ -21,7 +21,7 @@ interface CategoriesGridProps {
 
 export function CategoriesGrid({ services }: CategoriesGridProps) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
       {services.map((service, index) => (
         <Link
           href={`/category/${service.category}`}

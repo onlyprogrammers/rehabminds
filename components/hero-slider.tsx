@@ -80,6 +80,15 @@ const slides: Slide[] = [
 export default function ModernHero() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 50)
+    }
+    handleResize() // Set initial state
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
 
   const nextSlide = () => {
     if (isAnimating) return
@@ -128,9 +137,9 @@ export default function ModernHero() {
   }
 
   return (
-    <section className="py-16 md:py-10 overflow-hidden bg-gradient-to-br from-white to-accent/10">
+    <section className="py-8 md:py-5 overflow-hidden bg-gradient-to-br from-white to-accent/10">
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
           {/* Left side: Content */}
           <div className="order-2 lg:order-1">
             <AnimatePresence mode="wait">
@@ -142,11 +151,11 @@ export default function ModernHero() {
                 transition={{ duration: 0.5 }}
                 className="space-y-6"
               >
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
+                <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold text-primary leading-tight">
                   {slides[currentSlide].title}
                 </h1>
-                <p className="text-xl text-muted-foreground">{slides[currentSlide].subtitle}</p>
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <p className="text-xl sm-f text-muted-foreground">{slides[currentSlide].subtitle}</p>
+                <div className="flex flex-row sm:flex-row gap-2 pt-4 sm-flex">
                   <Link href={slides[currentSlide].cta.primary.link}>
                     <Button
                       size="lg"
@@ -216,7 +225,10 @@ export default function ModernHero() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.8 }}
                   transition={{ duration: 0.5 }}
-                  className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden border-4 border-white shadow-xl z-10"
+                  className="relative w-[300px] h-[300px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden border-4 border-white shadow-xl z-10"
+                  style={{
+                    width: isMobile ? "400px" : "300px",
+                    height: isMobile ? "400px" : "300px",}}
                 >
                   <Image
                     src={slides[currentSlide].image}
@@ -238,7 +250,7 @@ export default function ModernHero() {
                   return (
                     <motion.div
                       key={index}
-                      className={"absolute w-[100px] h-[100px] rounded-full overflow-hidden border-2 border-white shadow-md cursor-pointer " + (index === currentSlide ? " border-3 border-yellow-500" : "")}
+                      className={"absolute w-[80px] h-[80px] rounded-full overflow-hidden border-2 border-white shadow-md cursor-pointer " + (index === currentSlide ? " border-3 border-yellow-500" : "")}
                       style={{
                         left: "calc(50% + " + position.x + "px)",
                         top: "calc(50% + " + position.y + "px)",
@@ -246,12 +258,14 @@ export default function ModernHero() {
                       }}
                       whileHover={{ scale: 1.1 }}
                       onClick={() => goToSlide(index)}
+                      
                     >
                       <Image
                         src={slide.image}
                         alt={slide.title}
                         fill
                         className={"object-cover transition-opacity w-full h-full p-1 bg-white" + (index === currentSlide ? " opacity-100" : " opacity-50")}
+                        
                       />
                     </motion.div>
                   )

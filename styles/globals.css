@@ -92,3 +92,23 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+@media (max-width: 500px) {
+  body {
+    font-size: 0.875rem; /* 14px */
+  }
+  .sm-f{
+    font-size: 0.875rem; /* 14px */
+  }
+  .md-f {
+    font-size: 1rem; /* 16px */
+  }
+  .lg-f {
+    font-size: 1.125rem; /* 18px */
+  }
+  .sm-flex {
+    display: flex;
+  }
+  
+}

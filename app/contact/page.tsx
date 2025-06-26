@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -6,8 +8,62 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
+import { useState } from "react"
+import { randomUUID } from "crypto"
+import { v4 as uuidv4 } from 'uuid';
+
+type FormData = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
 
 export default function ContactPage() {
+    const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+    id: uuidv4(),
+    created_at: new Date().toISOString()
+  });
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    console.log(JSON.stringify(formData))
+
+    try {
+      const res = await fetch("http://127.0.0.1:8000/api/send-message/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (res.ok) {
+        setStatus("Message sent successfully!");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        const errData = await res.json();
+        setStatus("Failed: " + JSON.stringify(errData));
+      }
+    } catch (error) {
+      setStatus("Error sending message");
+      console.error(error);
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
@@ -89,25 +145,25 @@ export default function ContactPage() {
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">Your Name</Label>
-                    <Input id="name" placeholder="Enter your name" />
+                    <Input id="name" name="name" placeholder="Enter your name" value={formData.name} onChange={handleChange}/>
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email Address</Label>
-                    <Input id="email" type="email" placeholder="Enter your email" />
+                    <Input id="email" name="email" type="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="subject">Subject</Label>
-                  <Input id="subject" placeholder="Enter message subject" />
+                  <Input id="subject" name="subject" placeholder="Enter message subject" value={formData.subject} onChange={handleChange} />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="message">Message</Label>
-                  <Textarea id="message" placeholder="How can we help you?" rows={6} />
+                  <Textarea id="message" placeholder="How can we help you?" name="message" rows={6} value={formData.message}  onChange={handleChange} />
                 </div>
 
-                <Button type="submit" className="w-full">
+                <Button type="submit" className="w-full" onClick={handleSubmit} disabled={status === "Sending..."}>
                   Send Message
                 </Button>
               </form>
