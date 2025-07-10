@@ -1,0 +1,271 @@
+{
+  "programs": [
+    {
+      "id": "ba",
+      "name": "Bachelor of Arts",
+      "code": "BA",
+      "duration": "3 years",
+      "eligibility": "10+2 or equivalent",
+      "subjects": [
+        {
+          "code": "BEGC-101",
+          "title": "An Introduction to Literature",
+          "semester": 1,
+          "credits": 6
+        },
+        {
+          "code": "BEGC-102",
+          "title": "An Introduction to European Classical Literature",
+          "semester": 1,
+          "credits": 6
+        },
+        {
+          "code": "BPSC-101",
+          "title": "Introduction to Political Theory",
+          "semester": 1,
+          "credits": 6
+        },
+        {
+          "code": "BSOC-101",
+          "title": "Introduction to Sociology-I",
+          "semester": 1,
+          "credits": 6
+        },
+        {
+          "code": "BHIC-101",
+          "title": "History of India-I",
+          "semester": 1,
+          "credits": 6
+        }
+      ]
+    },
+    {
+      "id": "bca",
+      "name": "Bachelor of Computer Applications",
+      "code": "BCA",
+      "duration": "3 years",
+      "eligibility": "10+2 with Mathematics",
+      "subjects": [
+        {
+          "code": "BCS-011",
+          "title": "Computer Basics and PC Software",
+          "semester": 1,
+          "credits": 3
+        },
+        {
+          "code": "BCS-012",
+          "title": "Mathematics",
+          "semester": 1,
+          "credits": 3
+        },
+        {
+          "code": "ECO-01",
+          "title": "Business Organization",
+          "semester": 1,
+          "credits": 3
+        },
+        {
+          "code": "ECO-02",
+          "title": "Accountancy-I",
+          "semester": 1,
+          "credits": 3
+        },
+        {
+          "code": "BCS-013",
+          "title": "Computer Basics and PC Software Lab",
+          "semester": 1,
+          "credits": 2
+        }
+      ]
+    },
+    {
+      "id": "mca",
+      "name": "Master of Computer Applications",
+      "code": "MCA",
+      "duration": "3 years",
+      "eligibility": "Bachelor's degree with Mathematics",
+      "subjects": [
+        {
+          "code": "MCS-011",
+          "title": "Problem Solving and Programming",
+          "semester": 1,
+          "credits": 3
+        },
+        {
+          "code": "MCS-012",
+          "title": "Computer Organisation and Assembly Language Programming",
+          "semester": 1,
+          "credits": 4
+        },
+        {
+          "code": "MCS-013",
+          "title": "Discrete Mathematics",
+          "semester": 1,
+          "credits": 2
+        },
+        {
+          "code": "MCS-014",
+          "title": "Systems Analysis and Design",
+          "semester": 1,
+          "credits": 3
+        },
+        {
+          "code": "MCS-015",
+          "title": "Communication Skills",
+          "semester": 1,
+          "credits": 2
+        }
+      ]
+    }
+  ],
+  "services": {
+    "free": [
+      {
+        "type": "assignment",
+        "title": "Basic Assignment Help",
+        "description": "Get help with simple assignments and basic formatting",
+        "features": ["Basic assignment structure", "Simple formatting", "Email support", "Standard delivery (7 days)"]
+      },
+      {
+        "type": "notes",
+        "title": "Basic Study Notes",
+        "description": "Access to basic study materials and notes",
+        "features": ["Unit-wise basic notes", "PDF format", "Limited subjects", "Community support"]
+      },
+      {
+        "type": "gradecard",
+        "title": "Grade Card Access",
+        "description": "View and download your grade cards",
+        "features": ["Online grade card viewing", "Basic download", "Result notifications", "Academic history"]
+      }
+    ],
+    "premium": [
+      {
+        "type": "assignment",
+        "title": "Premium Assignment Service",
+        "description": "Complete assignment solutions with expert guidance",
+        "features": [
+          "Expert-written assignments",
+          "Proper formatting & references",
+          "Plagiarism-free content",
+          "24-hour delivery",
+          "Revision support",
+          "Phone support"
+        ],
+        "pricing": {
+          "basic": 199,
+          "standard": 299,
+          "premium": 499
+        }
+      },
+      {
+        "type": "notes",
+        "title": "Comprehensive Study Materials",
+        "description": "Detailed notes with examples and practice questions",
+        "features": [
+          "Comprehensive coverage",
+          "Multiple formats (PDF, Word, Mobile)",
+          "Practice questions",
+          "Video explanations",
+          "Regular updates",
+          "Priority support"
+        ],
+        "pricing": {
+          "per_subject": 149,
+          "semester_pack": 799,
+          "full_program": 2999
+        }
+      },
+      {
+        "type": "synopsis",
+        "title": "Project Synopsis Help",
+        "description": "Expert guidance for project synopsis and dissertations",
+        "features": [
+          "Topic selection guidance",
+          "Research methodology",
+          "Proper formatting",
+          "Literature review help",
+          "Data analysis support",
+          "Approval assistance"
+        ],
+        "pricing": {
+          "basic": 999,
+          "standard": 1999,
+          "premium": 3999
+        }
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Rahul Singh",
+      "program": "BCA",
+      "rating": 5,
+      "comment": "IGNOU Hub saved my academic career! Their assignments are top-quality and helped me score excellent grades. The support team is always available to help.",
+      "location": "Delhi"
+    },
+    {
+      "name": "Meera Patel",
+      "program": "MBA",
+      "rating": 5,
+      "comment": "The study notes are comprehensive and easy to understand. I completed my MBA with distinction thanks to their excellent materials and guidance.",
+      "location": "Mumbai"
+    },
+    {
+      "name": "Deepak Gupta",
+      "program": "MA",
+      "rating": 5,
+      "comment": "Affordable pricing and excellent quality. The synopsis help was invaluable for my project work. Highly recommend to all IGNOU students!",
+      "location": "Bangalore"
+    },
+    {
+      "name": "Priya Sharma",
+      "program": "B.Com",
+      "rating": 4,
+      "comment": "Great platform for IGNOU students. The free materials are also very helpful. Customer service is responsive and helpful.",
+      "location": "Pune"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Are the assignments plagiarism-free?",
+      "answer": "Yes, all our assignments are 100% original and plagiarism-free. We use advanced plagiarism detection tools to ensure content originality."
+    },
+    {
+      "question": "How quickly can I get my assignment?",
+      "answer": "Premium assignments are delivered within 24-48 hours. Free assignments may take 5-7 days. Rush delivery is available for urgent requirements."
+    },
+    {
+      "question": "Do you provide revision support?",
+      "answer": "Yes, we provide free revisions for premium assignments within 7 days of delivery. Our experts will make necessary changes based on your feedback."
+    },
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept all major payment methods including UPI, Net Banking, Credit/Debit Cards, and digital wallets like Paytm, PhonePe, etc."
+    },
+    {
+      "question": "Is there any refund policy?",
+      "answer": "Yes, we have a 7-day money-back guarantee if you're not satisfied with our services. Terms and conditions apply."
+    }
+  ],
+  "study_centers": [
+    {
+      "code": "2501",
+      "name": "School of Computer and Information Sciences",
+      "location": "New Delhi",
+      "programs": ["BCA", "MCA", "PGDCA"]
+    },
+    {
+      "code": "2502",
+      "name": "School of Social Sciences",
+      "location": "New Delhi",
+      "programs": ["BA", "MA", "MSW"]
+    },
+    {
+      "code": "2503",
+      "name": "School of Management Studies",
+      "location": "New Delhi",
+      "programs": ["MBA", "PGDM", "Certificate Programs"]
+    }
+  ]
+}
