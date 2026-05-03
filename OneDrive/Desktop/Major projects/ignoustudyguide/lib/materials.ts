@@ -87,7 +87,7 @@ export async function getDistinctProgrammes(materialType?: string) {
      from marketplace_materials
      where status = $1${typeFilter} and programme is not null and programme <> ''
      group by programme
-     order by count::int desc
+     order by count(*) desc
      limit 20`,
     params
   )
